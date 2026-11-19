@@ -1,1 +1,0 @@
-[["Asset_Turnover_d3", "1Jd9TfNN4AAbUDycn2X9J3", "ts_rank(ts_backfill(sales / assets, 65), 252)", 3, 0.08], ["Asset_Turnover_d2", "SdQ9t5aw5hyahwOoac9Tmz", "ts_rank(ts_backfill(sales / assets, 65), 252)", 2, 0.08], ["ROA_d3", "43ZkJf41a4Wma2S1aqTA7bqs", "ts_rank(ts_backfill(income / assets, 65), 252)", 3, 0.08]]
