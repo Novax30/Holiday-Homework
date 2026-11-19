@@ -1,0 +1,212 @@
+[
+  {
+    "id": "xAvxQ7am",
+    "name": null,
+    "sharpe": 1.75,
+    "fitness": 1.19,
+    "turnover": 0.1551,
+    "margin": 0.000918,
+    "decay": 3,
+    "date": "2026-11-17T12:20:21-05:00"
+  },
+  {
+    "id": "d5axm6mx",
+    "name": null,
+    "sharpe": 1.85,
+    "fitness": 1.18,
+    "turnover": 0.184,
+    "margin": 0.000817,
+    "decay": 2,
+    "date": "2026-11-17T12:19:28-05:00"
+  },
+  {
+    "id": "RRepYoq0",
+    "name": null,
+    "sharpe": 1.8,
+    "fitness": 1.11,
+    "turnover": 0.1847,
+    "margin": 0.000765,
+    "decay": 2,
+    "date": "2026-11-17T12:19:28-05:00"
+  },
+  {
+    "id": "LLKp6Z56",
+    "name": null,
+    "sharpe": 1.81,
+    "fitness": 1.21,
+    "turnover": 0.1942,
+    "margin": 0.000895,
+    "decay": 2,
+    "date": "2026-11-17T12:13:49-05:00"
+  },
+  {
+    "id": "6XMw1laO",
+    "name": null,
+    "sharpe": 1.71,
+    "fitness": 1.18,
+    "turnover": 0.176,
+    "margin": 0.000952,
+    "decay": 3,
+    "date": "2026-11-17T12:12:24-05:00"
+  },
+  {
+    "id": "Grmw6e55",
+    "name": null,
+    "sharpe": 1.82,
+    "fitness": 1.2,
+    "turnover": 0.205,
+    "margin": 0.000875,
+    "decay": 2,
+    "date": "2026-11-17T12:11:51-05:00"
+  },
+  {
+    "id": "leaV2k2N",
+    "name": null,
+    "sharpe": 1.73,
+    "fitness": 1.06,
+    "turnover": 0.2575,
+    "margin": 0.000753,
+    "decay": 2,
+    "date": "2026-11-17T12:07:09-05:00"
+  },
+  {
+    "id": "LLKp6qJ1",
+    "name": null,
+    "sharpe": 1.61,
+    "fitness": 1.01,
+    "turnover": 0.2305,
+    "margin": 0.000782,
+    "decay": 3,
+    "date": "2026-11-17T12:07:06-05:00"
+  },
+  {
+    "id": "YPapmwX6",
+    "name": null,
+    "sharpe": 1.74,
+    "fitness": 1.07,
+    "turnover": 0.2604,
+    "margin": 0.000752,
+    "decay": 2,
+    "date": "2026-11-17T12:06:39-05:00"
+  },
+  {
+    "id": "blaLMGRq",
+    "name": null,
+    "sharpe": 2.27,
+    "fitness": 1.25,
+    "turnover": 0.3888,
+    "margin": 0.000606,
+    "decay": 2,
+    "date": "2026-11-17T12:03:01-05:00"
+  },
+  {
+    "id": "j2aZWqkj",
+    "name": null,
+    "sharpe": 1.71,
+    "fitness": 1.11,
+    "turnover": 0.1733,
+    "margin": 0.000845,
+    "decay": 2,
+    "date": "2026-11-17T12:01:51-05:00"
+  },
+  {
+    "id": "blaLVKAN",
+    "name": null,
+    "sharpe": 2.25,
+    "fitness": 1.16,
+    "turnover": 0.4483,
+    "margin": 0.000533,
+    "decay": 2,
+    "date": "2026-11-17T11:59:17-05:00"
+  },
+  {
+    "id": "1YW71xP6",
+    "name": null,
+    "sharpe": 2.4,
+    "fitness": 1.32,
+    "turnover": 0.3363,
+    "margin": 0.000605,
+    "decay": 2,
+    "date": "2026-11-17T11:53:43-05:00"
+  },
+  {
+    "id": "vRALxmmv",
+    "name": null,
+    "sharpe": 2.08,
+    "fitness": 1.0,
+    "turnover": 0.3296,
+    "margin": 0.000466,
+    "decay": 2,
+    "date": "2026-11-17T11:50:48-05:00"
+  },
+  {
+    "id": "VkNpgNZ0",
+    "name": "Consultant_Analyst_Inst13F_VWAP_w7_d3",
+    "sharpe": 2.06,
+    "fitness": 1.19,
+    "turnover": 0.3243,
+    "margin": 0.000663,
+    "decay": 3,
+    "date": "2026-11-17T10:35:25-05:00"
+  },
+  {
+    "id": "rK7ovjoE",
+    "name": "Consultant_Analyst_Inst13F_VWAP_w3_d3",
+    "sharpe": 2.11,
+    "fitness": 1.14,
+    "turnover": 0.3535,
+    "margin": 0.000581,
+    "decay": 3,
+    "date": "2026-11-17T10:34:08-05:00"
+  },
+  {
+    "id": "xAvx0KoW",
+    "name": "Consultant_Analyst_Inst13F_VWAP_w3_d2",
+    "sharpe": 2.27,
+    "fitness": 1.17,
+    "turnover": 0.4204,
+    "margin": 0.000529,
+    "decay": 2,
+    "date": "2026-11-17T10:29:26-05:00"
+  },
+  {
+    "id": "P05paMNE",
+    "name": "Consultant_Analyst_Inst13F_VWAP_w7_d2",
+    "sharpe": 2.22,
+    "fitness": 1.21,
+    "turnover": 0.3876,
+    "margin": 0.000597,
+    "decay": 2,
+    "date": "2026-11-17T10:26:01-05:00"
+  },
+  {
+    "id": "MP6pOJP6",
+    "name": "Consultant_Analyst_Inst13F_VWAP_w5_d2",
+    "sharpe": 2.26,
+    "fitness": 1.2,
+    "turnover": 0.4055,
+    "margin": 0.000564,
+    "decay": 2,
+    "date": "2026-11-17T10:12:34-05:00"
+  },
+  {
+    "id": "akad6Gmw",
+    "name": "Consultant_Analyst_Inst13F_VWAP_w5_d3",
+    "sharpe": 2.1,
+    "fitness": 1.17,
+    "turnover": 0.3403,
+    "margin": 0.000622,
+    "decay": 3,
+    "date": "2026-11-17T10:11:26-05:00"
+  },
+  {
+    "id": "pwa6Yado",
+    "name": "Consultant_Institutional_Ownership_CLV",
+    "sharpe": 1.75,
+    "fitness": 1.05,
+    "turnover": 0.2785,
+    "margin": 0.000717,
+    "decay": 2,
+    "date": "2026-11-17T10:01:54-05:00"
+  }
+]

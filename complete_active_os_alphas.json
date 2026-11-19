@@ -1,0 +1,252 @@
+[
+  {
+    "id": "vRAJ18gG",
+    "name": "Cashflow_ROA_CLV_Hybrid",
+    "sharpe": 2.05,
+    "fitness": 1.03,
+    "turnover": 0.2772,
+    "margin_bps": 5.010000000000001,
+    "decay": 2,
+    "code": "group_rank(ts_rank(cashflow_op / assets, 126), subindustry) - 0.5 * group_rank(ts_decay_linear(((close - low) - (high - close)) / (high - low + 0.0001 * close), 4), subindustry)"
+  },
+  {
+    "id": "VkNwgo2M",
+    "name": "Blended_Shadow_Reversal_Hybrid",
+    "sharpe": 1.87,
+    "fitness": 1.61,
+    "turnover": 0.4796,
+    "margin_bps": 14.909999999999998,
+    "decay": 2,
+    "code": "- ts_std_dev(((high - close) / high) * ((high - open) / high), 22) + 0.05 * (-ts_delta(close, 5) / ts_delay(close, 5))"
+  },
+  {
+    "id": "kqaevZqL",
+    "name": "Analyst_PTP_PriceMomentum_Dislocation",
+    "sharpe": 1.78,
+    "fitness": 1.44,
+    "turnover": 0.1556,
+    "margin_bps": 13.120000000000001,
+    "decay": 4,
+    "code": "group_rank(ts_rank(est_ptp / close, 126), subindustry) - group_rank(ts_rank(close / ts_delay(close, 60) - 1, 126), subindustry)"
+  },
+  {
+    "id": "akaXabd2",
+    "name": null,
+    "sharpe": 2.0,
+    "fitness": 1.24,
+    "turnover": 0.2874,
+    "margin_bps": 7.640000000000001,
+    "decay": 5,
+    "code": "group_rank(ts_rank(est_ptp / close, 126), subindustry) - group_rank(ts_decay_linear((close - vwap) / vwap, 5), subindustry)"
+  },
+  {
+    "id": "MP69b9n6",
+    "name": "Intraday_Volume_Expansion_Decay",
+    "sharpe": 1.93,
+    "fitness": 1.02,
+    "turnover": 0.4883,
+    "margin_bps": 5.54,
+    "decay": 4,
+    "code": "group_rank(ts_decay_linear(-(close - open) / (high - low + 0.001) * (volume / adv20), 4), subindustry)"
+  },
+  {
+    "id": "3q0gnQm0",
+    "name": "NonLinear_Quantile_EPS_Surprise",
+    "sharpe": 1.66,
+    "fitness": 1.12,
+    "turnover": 0.3041,
+    "margin_bps": 9.11,
+    "decay": 4,
+    "code": "quantile(ts_rank(est_eps / close, 60)) - quantile(close / ts_delay(close, 5) - 1)"
+  },
+  {
+    "id": "QP0eZNzX",
+    "name": "Sales_Yield_10D_Reversal_Hybrid",
+    "sharpe": 1.3,
+    "fitness": 1.06,
+    "turnover": 0.2076,
+    "margin_bps": 13.2,
+    "decay": 4,
+    "code": "rank(ts_backfill(revenue / cap, 65)) - rank(close / ts_delay(close, 10) - 1)"
+  },
+  {
+    "id": "LLKeVmZe",
+    "name": "IV_Call_Term_Structure_Slope",
+    "sharpe": 1.51,
+    "fitness": 1.19,
+    "turnover": 0.0748,
+    "margin_bps": 20.59,
+    "decay": 8,
+    "code": "quantile(ts_mean(ts_backfill(implied_volatility_call_60 / implied_volatility_call_30, 5), 30))"
+  },
+  {
+    "id": "zqdaKbZd",
+    "name": "Analyst_Earnings_Yield_Momentum",
+    "sharpe": 1.61,
+    "fitness": 1.11,
+    "turnover": 0.1669,
+    "margin_bps": 9.59,
+    "decay": 4,
+    "code": "group_rank(ts_rank(est_eps / close, 60), industry)"
+  },
+  {
+    "id": "1YWvkXaQ",
+    "name": "Hybrid_Analyst_PTP_Reversal",
+    "sharpe": 1.72,
+    "fitness": 1.11,
+    "turnover": 0.3284,
+    "margin_bps": 8.27,
+    "decay": 4,
+    "code": "rank(est_ptp / close) - rank(close - ts_mean(close, 5))"
+  },
+  {
+    "id": "wpo6KZz5",
+    "name": "Elite_BalanceSheet_Price_Dislocation",
+    "sharpe": 2.38,
+    "fitness": 1.63,
+    "turnover": 0.3395,
+    "margin_bps": 9.43,
+    "decay": 4,
+    "code": "rank(ts_backfill(liabilities / assets, 65)) - rank(close - ts_mean(close, 5))"
+  },
+  {
+    "id": "vR1XZzoA",
+    "name": null,
+    "sharpe": 1.68,
+    "fitness": 2.99,
+    "turnover": 0.1034,
+    "margin_bps": 76.45,
+    "decay": 4,
+    "code": "-ts_std_dev(high / low, 22)"
+  },
+  {
+    "id": "qMLJ73ej",
+    "name": null,
+    "sharpe": 2.08,
+    "fitness": 1.2,
+    "turnover": 0.2051,
+    "margin_bps": 6.65,
+    "decay": 1,
+    "code": "group_rank(ts_rank(operating_income/assets,126),subindustry)-0.5*group_rank(ts_decay_linear(ts_delta(close,5)/ts_std_dev(returns,20),5),subindustry)"
+  },
+  {
+    "id": "1YN0OQnR",
+    "name": null,
+    "sharpe": 1.62,
+    "fitness": 1.14,
+    "turnover": 0.0988,
+    "margin_bps": 12.6,
+    "decay": 5,
+    "code": "quantile(ts_mean(ts_backfill(implied_volatility_call_30, 5) - ts_backfill(implied_volatility_put_30, 5), 20), driver = gaussian)"
+  },
+  {
+    "id": "QPvNWG8r",
+    "name": null,
+    "sharpe": 1.52,
+    "fitness": 2.53,
+    "turnover": 0.0977,
+    "margin_bps": 70.88,
+    "decay": 5,
+    "code": "-ts_std_dev(high / low, 22)"
+  },
+  {
+    "id": "pwdQwPrV",
+    "name": null,
+    "sharpe": 2.85,
+    "fitness": 1.5,
+    "turnover": 0.4237,
+    "margin_bps": 5.57,
+    "decay": 0,
+    "code": "group_rank(ts_rank(operating_income/cap,126),subindustry)-0.5*group_rank(ts_decay_linear(((close-low)-(high-close))/(high-low),5),subindustry)"
+  },
+  {
+    "id": "GrWp1OV3",
+    "name": null,
+    "sharpe": 1.78,
+    "fitness": 2.63,
+    "turnover": 0.1309,
+    "margin_bps": 43.68000000000001,
+    "decay": 0,
+    "code": "-ts_std_dev(volume / adv20, 35) * (high / low)"
+  },
+  {
+    "id": "2rj3onxx",
+    "name": null,
+    "sharpe": 1.6,
+    "fitness": 2.18,
+    "turnover": 0.1075,
+    "margin_bps": 43.19,
+    "decay": 0,
+    "code": "-ts_std_dev(volume / adv20, 40) + 0.1 * (-ts_delta(close, 5) / ts_delay(close, 5))"
+  },
+  {
+    "id": "QPYxrWa5",
+    "name": null,
+    "sharpe": 1.88,
+    "fitness": 1.27,
+    "turnover": 0.2177,
+    "margin_bps": 9.11,
+    "decay": 4,
+    "code": "group_rank(ts_rank(cashflow_op/cap,252),subindustry)-0.5*group_rank(ts_decay_linear(close-open,5),subindustry)"
+  },
+  {
+    "id": "XgRek61l",
+    "name": null,
+    "sharpe": 1.65,
+    "fitness": 1.01,
+    "turnover": 0.1924,
+    "margin_bps": 7.550000000000001,
+    "decay": 4,
+    "code": "group_rank(ts_rank(ebitda/cap,126),subindustry)+group_rank(ts_rank(ebitda/assets,126),subindustry)+group_rank(ts_delta(ebitda/assets,63),subindustry)-1.0*group_rank(ts_decay_linear(((close-low)-(high-close))/(high-low),5),subindustry)"
+  },
+  {
+    "id": "YPxJ68oA",
+    "name": null,
+    "sharpe": 2.24,
+    "fitness": 1.32,
+    "turnover": 0.2116,
+    "margin_bps": 6.970000000000001,
+    "decay": 0,
+    "code": "group_rank(ts_rank(operating_income/cap,126),subindustry)+group_rank(ts_rank(operating_income/assets,126),subindustry)+group_rank(ts_delta(operating_income/assets,63),subindustry)+0.5*group_rank(ts_decay_linear((vwap-close)/vwap,5),subindustry)"
+  },
+  {
+    "id": "P0MoWPzW",
+    "name": "NJHH",
+    "sharpe": 1.98,
+    "fitness": 1.4,
+    "turnover": 0.1211,
+    "margin_bps": 10.39,
+    "decay": 4,
+    "code": "group_rank(ts_rank(operating_income/cap,126),subindustry)+group_rank(ts_rank(operating_income/assets,126),subindustry)+group_rank(ts_delta(operating_income/assets,63),subindustry)-0.5*group_rank(ts_decay_linear(((close-low)-(high-close))/(high-low+0.001),5),subindustry)"
+  },
+  {
+    "id": "bl86XZaN",
+    "name": null,
+    "sharpe": 2.63,
+    "fitness": 1.13,
+    "turnover": 0.6653,
+    "margin_bps": 3.7199999999999998,
+    "decay": 0,
+    "code": "group_rank(ts_rank(operating_income/assets,252),subindustry) - group_rank(ts_decay_linear(((close-low)-(high-close))/(high-low)*rank(ts_mean(volume,60)),3),subindustry)"
+  },
+  {
+    "id": "rKdPLlbo",
+    "name": null,
+    "sharpe": 1.31,
+    "fitness": 1.02,
+    "turnover": 0.1252,
+    "margin_bps": 12.21,
+    "decay": 0,
+    "code": "ts_rank(cashflow_op/cap, 252)"
+  },
+  {
+    "id": "wp9OVKX1",
+    "name": null,
+    "sharpe": 1.42,
+    "fitness": 1.06,
+    "turnover": 0.1309,
+    "margin_bps": 11.15,
+    "decay": 0,
+    "code": "/*\n HYPOTHESIS: If the operating income of a company is currently higher than its past 1 year history, buy the company's stock and vice-versa.\n \n IMPLEMENTATION: Using ts_rank to identify current performance of the company compared to its own history, using the fundamental data field \"operating_income\".\n \n HINT TO IMPROVE THE ALPHA: Rather than comparing the value directly, can calculating a ratio that includes stock market moves, improve the signal?\n */\n \n ts_rank(operating_income/cap,252)"
+  }
+]

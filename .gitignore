@@ -1,0 +1,17 @@
+# Environment variables / secrets
+.env
+brain_token.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
